@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## R Progamming assignment 2 DJMcClellan1966
 
 ## sources:
@@ -38,4 +39,6 @@ cacheSolve <- function(x, ...) {                   ## calls makeCacheMatrix
     x$setinverse(cS)
     inv                                                 ## evaluates cS to check if value is not Null
 }
+=======
+>>>>>>> FETCH_HEAD
 
