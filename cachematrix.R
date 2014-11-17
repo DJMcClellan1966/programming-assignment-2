@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {         ##defines makeCacheMatrix fu
     }                                               ## value in memory.
     
     get <- function() x                             ## call x function
-    setinverse <- function(inverse) mCM <<- inverse     ##sets the value of cache mCM
+    setinverse <- function(inverse) mCM <<- inverse     ##searched for inverse and sets to inverse of mCM
     getinverse<- function() mCM                         ##retrieves value of cache mCM
     list(set = set, get = get,
          setinverse = setinverse,
