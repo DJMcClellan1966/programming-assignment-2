@@ -11,9 +11,9 @@
 makeCacheMatrix <- function(x = matrix()) {         ##defines makeCacheMatrix function
     mCM <- Null                                     ## assigning Null value to variable
     set <- function(y) {
-        x <<- y                                     ## variable y created and assigned value of x,
+        x <<- y                                     ## looks in global environment for y and when finds set to value of x
         mCM <<- NULL                                ## and null set to variable assigned to different
-    }                                               ## function in cache.
+    }                                               ## value in memory.
     
     get <- function() x                             ## call x function
     setinverse <- function(inverse) mCM <<- inverse     ##sets the value of cache mCM
