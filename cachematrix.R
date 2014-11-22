@@ -29,7 +29,7 @@ makeCacheMatrix <- function(x = matrix()) {         ##defines makeCacheMatrix fu
 ## cacheSolve receieves a variable set as matrix defined by makeCacheMatrix
 
 cacheSolve <- function(x, ...) {                   ## calls makeCacheMatrix
-    cS <- x$getinverse()                            ## gets value of cS from cache
+    cS <- x$getinverse()                            ## checks environment to find cS
     if(!is.null(cS)) {                              ## checks to see if cS is null
         message("getting cached data")              ## if cS is not null returns message
         return(cS)
